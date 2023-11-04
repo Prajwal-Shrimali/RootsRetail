@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "226390042482",
+    "project_id": "tribalsmoment",
+    "storage_bucket": "tribalsmoment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226390042482:android:2d4e13743bdd2876561feb",
+        "android_client_info": {
+          "package_name": "com.mycompany.tribalmarketspace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV6a6Ww6bXWtR1dEaWKEUAxFQK293ovtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
