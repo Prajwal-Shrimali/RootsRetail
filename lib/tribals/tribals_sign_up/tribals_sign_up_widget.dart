@@ -139,7 +139,9 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                           ),
                           alignment: AlignmentDirectional(0.00, 0.00),
                           child: Text(
-                            'Tribals',
+                            FFLocalizations.of(context).getText(
+                              '9taxauo0' /* Tribals */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
                                 .override(
@@ -179,7 +181,9 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'Sign Up',
+                                    FFLocalizations.of(context).getText(
+                                      'u3o2uue7' /* Sign Up */,
+                                    ),
                                     textAlign: TextAlign.center,
                                     style: FlutterFlowTheme.of(context)
                                         .displaySmall,
@@ -202,7 +206,10 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                         autofillHints: [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
-                                          labelText: 'Tribal Chief Name',
+                                          labelText: FFLocalizations.of(context)
+                                              .getText(
+                                            'vt0uyaqf' /* Tribal Chief Name */,
+                                          ),
                                           labelStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge,
@@ -274,7 +281,10 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                         autofillHints: [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
-                                          labelText: 'Tribal Name',
+                                          labelText: FFLocalizations.of(context)
+                                              .getText(
+                                            'hhese7mv' /* Tribal Name */,
+                                          ),
                                           labelStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge,
@@ -346,7 +356,10 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                         autofillHints: [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
-                                          labelText: 'Your Start Produce',
+                                          labelText: FFLocalizations.of(context)
+                                              .getText(
+                                            'd7j3oqfz' /* Your Start Produce */,
+                                          ),
                                           labelStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge,
@@ -439,10 +452,12 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                           return;
                                         }
 
-                                        context.goNamedAuth('TribalsDashboard',
+                                        context.goNamedAuth('MerchantDashboard',
                                             context.mounted);
                                       },
-                                      text: 'Create Account',
+                                      text: FFLocalizations.of(context).getText(
+                                        '65dccg2z' /* Create Account */,
+                                      ),
                                       options: FFButtonOptions(
                                         width: double.infinity,
                                         height: 44.0,

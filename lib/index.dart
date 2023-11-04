@@ -16,3 +16,11 @@ export '/tribals/tribal_success_page/tribal_success_page_widget.dart'
     show TribalSuccessPageWidget;
 export '/merchant/merchant_order_generate/merchant_order_generate_widget.dart'
     show MerchantOrderGenerateWidget;
+export '/merchant/merchant_profile/merchant_profile_widget.dart'
+    show MerchantProfileWidget;
+export '/merchant/merchant_notification_settings/merchant_notification_settings_widget.dart'
+    show MerchantNotificationSettingsWidget;
+export '/merchant/merchant_helper_bot/merchant_helper_bot_widget.dart'
+    show MerchantHelperBotWidget;
+export '/tribals/tribal_news_section/tribal_news_section_widget.dart'
+    show TribalNewsSectionWidget;

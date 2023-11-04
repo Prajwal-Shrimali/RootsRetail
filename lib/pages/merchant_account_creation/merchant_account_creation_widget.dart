@@ -106,7 +106,9 @@ class _MerchantAccountCreationWidgetState
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     24.0, 35.0, 0.0, 0.0),
                                 child: Text(
-                                  'Tribals',
+                                  FFLocalizations.of(context).getText(
+                                    '7wiaoksj' /* Tribals */,
+                                  ),
                                   style:
                                       FlutterFlowTheme.of(context).displaySmall,
                                 ),
@@ -115,7 +117,9 @@ class _MerchantAccountCreationWidgetState
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 0.0, 0.0),
                                 child: Text(
-                                  'Merchant',
+                                  FFLocalizations.of(context).getText(
+                                    'o8dk0pbs' /* Merchant */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .displaySmall
                                       .override(
@@ -149,7 +153,9 @@ class _MerchantAccountCreationWidgetState
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 20.0),
                                     child: Text(
-                                      'Create an account',
+                                      FFLocalizations.of(context).getText(
+                                        'yasc1srs' /* Create an account */,
+                                      ),
                                       style: FlutterFlowTheme.of(context)
                                           .headlineLarge,
                                     ),
@@ -167,7 +173,10 @@ class _MerchantAccountCreationWidgetState
                                         autofillHints: [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
-                                          labelText: 'Email',
+                                          labelText: FFLocalizations.of(context)
+                                              .getText(
+                                            'b46edqw3' /* Email */,
+                                          ),
                                           labelStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge,
@@ -239,7 +248,10 @@ class _MerchantAccountCreationWidgetState
                                         autofillHints: [AutofillHints.password],
                                         obscureText: !_model.passwordVisibility,
                                         decoration: InputDecoration(
-                                          labelText: 'Password',
+                                          labelText: FFLocalizations.of(context)
+                                              .getText(
+                                            'ip6pvfj5' /* Password */,
+                                          ),
                                           labelStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge,
@@ -330,7 +342,10 @@ class _MerchantAccountCreationWidgetState
                                         obscureText:
                                             !_model.passwordConfirmVisibility,
                                         decoration: InputDecoration(
-                                          labelText: 'Confirm Password',
+                                          labelText: FFLocalizations.of(context)
+                                              .getText(
+                                            'vin203tb' /* Confirm Password */,
+                                          ),
                                           labelStyle:
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge,
@@ -439,10 +454,12 @@ class _MerchantAccountCreationWidgetState
                                           return;
                                         }
 
-                                        context.goNamedAuth('TribalsDashboard',
+                                        context.goNamedAuth('MerchantDashboard',
                                             context.mounted);
                                       },
-                                      text: 'Create Account',
+                                      text: FFLocalizations.of(context).getText(
+                                        'qkppbe6e' /* Create Account */,
+                                      ),
                                       options: FFButtonOptions(
                                         width: double.infinity,
                                         height: 44.0,
@@ -510,7 +527,10 @@ class _MerchantAccountCreationWidgetState
                                               alignment: AlignmentDirectional(
                                                   0.00, 0.00),
                                               child: Text(
-                                                'OR',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  '2oypa2xq' /* OR */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .labelLarge,
@@ -533,10 +553,12 @@ class _MerchantAccountCreationWidgetState
                                           return;
                                         }
 
-                                        context.goNamedAuth('TribalsDashboard',
+                                        context.goNamedAuth('MerchantDashboard',
                                             context.mounted);
                                       },
-                                      text: 'Continue with Google',
+                                      text: FFLocalizations.of(context).getText(
+                                        'r1g0bgm2' /* Continue with Google */,
+                                      ),
                                       icon: FaIcon(
                                         FontAwesomeIcons.google,
                                         size: 20.0,
@@ -607,11 +629,18 @@ class _MerchantAccountCreationWidgetState
                                             children: [
                                               TextSpan(
                                                 text:
-                                                    'Already have an account? ',
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'qtf8mkka' /* Already have an account?  */,
+                                                ),
                                                 style: TextStyle(),
                                               ),
                                               TextSpan(
-                                                text: ' Sign In here',
+                                                text:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'ezj9cep6' /*  Sign In here */,
+                                                ),
                                                 style: FlutterFlowTheme.of(
                                                         context)
                                                     .bodyMedium
@@ -737,7 +766,10 @@ class _MerchantAccountCreationWidgetState
                                                 ),
                                               ),
                                               Text(
-                                                'UserName',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'r56km4dl' /* UserName */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .titleMedium,
@@ -750,7 +782,10 @@ class _MerchantAccountCreationWidgetState
                                                 CrossAxisAlignment.end,
                                             children: [
                                               Text(
-                                                'Overall',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  '4xt5uy9s' /* Overall */,
+                                                ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodySmall,
@@ -764,7 +799,11 @@ class _MerchantAccountCreationWidgetState
                                                             .fromSTEB(0.0, 0.0,
                                                                 4.0, 0.0),
                                                     child: Text(
-                                                      '5',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'fis3nxcf' /* 5 */,
+                                                      ),
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -793,7 +832,10 @@ class _MerchantAccountCreationWidgetState
                                         children: [
                                           Expanded(
                                             child: AutoSizeText(
-                                              'Nice outdoor courts, solid concrete and good hoops for the neighborhood.',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'urgk2091' /* Nice outdoor courts, solid con... */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium,

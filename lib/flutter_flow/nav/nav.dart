@@ -77,16 +77,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? TribalsDashboardWidget()
-          : LoginPageWidget(),
+      errorBuilder: (context, state) =>
+          appStateNotifier.loggedIn ? NavBarPage() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.loggedIn
-              ? TribalsDashboardWidget()
-              : LoginPageWidget(),
+          builder: (context, _) =>
+              appStateNotifier.loggedIn ? NavBarPage() : LoginPageWidget(),
         ),
         FFRoute(
           name: 'LoginPage',
@@ -111,7 +109,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'MerchantDashboard',
           path: '/merchantDashboard',
-          builder: (context, params) => MerchantDashboardWidget(),
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'MerchantDashboard')
+              : MerchantDashboardWidget(),
         ),
         FFRoute(
           name: 'Tribal_OrderConfirmation',
@@ -132,6 +132,30 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'MerchantOrderGenerate',
           path: '/merchantOrderGenerate',
           builder: (context, params) => MerchantOrderGenerateWidget(),
+        ),
+        FFRoute(
+          name: 'MerchantProfile',
+          path: '/merchantProfile',
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'MerchantProfile')
+              : MerchantProfileWidget(),
+        ),
+        FFRoute(
+          name: 'MerchantNotificationSettings',
+          path: '/merchantNotificationSettings',
+          builder: (context, params) => MerchantNotificationSettingsWidget(),
+        ),
+        FFRoute(
+          name: 'MerchantHelperBot',
+          path: '/merchantHelperBot',
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'MerchantHelperBot')
+              : MerchantHelperBotWidget(),
+        ),
+        FFRoute(
+          name: 'TribalNewsSection',
+          path: '/tribalNewsSection',
+          builder: (context, params) => TribalNewsSectionWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

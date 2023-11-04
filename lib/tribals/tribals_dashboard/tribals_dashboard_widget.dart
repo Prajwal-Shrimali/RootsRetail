@@ -59,7 +59,9 @@ class _TribalsDashboardWidgetState extends State<TribalsDashboardWidget> {
             backgroundColor: FlutterFlowTheme.of(context).primary,
             automaticallyImplyLeading: false,
             title: AutoSizeText(
-              'Tribal Dashboard',
+              FFLocalizations.of(context).getText(
+                'ulkj4eri' /* Tribal Dashboard */,
+              ),
               style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Yantramanav',
                     color: Colors.white,
@@ -107,7 +109,9 @@ class _TribalsDashboardWidgetState extends State<TribalsDashboardWidget> {
                                 child: Align(
                                   alignment: AlignmentDirectional(0.00, 0.00),
                                   child: Text(
-                                    'Update Inventory',
+                                    FFLocalizations.of(context).getText(
+                                      'o8xt4uor' /* Update Inventory */,
+                                    ),
                                     textAlign: TextAlign.center,
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -124,32 +128,27 @@ class _TribalsDashboardWidgetState extends State<TribalsDashboardWidget> {
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   10.0, 20.0, 20.0, 10.0),
-                              child: InkWell(
-                                splashColor: Colors.transparent,
-                                focusColor: Colors.transparent,
-                                hoverColor: Colors.transparent,
-                                highlightColor: Colors.transparent,
-                                onTap: () async {},
-                                child: Container(
-                                  width: double.infinity,
-                                  height: 150.0,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    borderRadius: BorderRadius.circular(24.0),
-                                  ),
-                                  child: Align(
-                                    alignment: AlignmentDirectional(0.00, 0.00),
-                                    child: Text(
-                                      'Stock Goods',
-                                      textAlign: TextAlign.center,
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Readex Pro',
-                                            fontSize: 35.0,
-                                          ),
+                              child: Container(
+                                width: double.infinity,
+                                height: 150.0,
+                                decoration: BoxDecoration(
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBackground,
+                                  borderRadius: BorderRadius.circular(24.0),
+                                ),
+                                child: Align(
+                                  alignment: AlignmentDirectional(0.00, 0.00),
+                                  child: Text(
+                                    FFLocalizations.of(context).getText(
+                                      'g1t9imdz' /*  */,
                                     ),
+                                    textAlign: TextAlign.center,
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Readex Pro',
+                                          fontSize: 35.0,
+                                        ),
                                   ),
                                 ),
                               ),
@@ -250,7 +249,9 @@ class _TribalsDashboardWidgetState extends State<TribalsDashboardWidget> {
                                 child: Align(
                                   alignment: AlignmentDirectional(0.00, 0.00),
                                   child: Text(
-                                    'View Merchant Request',
+                                    FFLocalizations.of(context).getText(
+                                      'h4an8zzx' /* View Merchant Request */,
+                                    ),
                                     textAlign: TextAlign.center,
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -272,7 +273,18 @@ class _TribalsDashboardWidgetState extends State<TribalsDashboardWidget> {
                                 focusColor: Colors.transparent,
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
-                                onTap: () async {},
+                                onTap: () async {
+                                  context.pushNamed(
+                                    'TribalNewsSection',
+                                    extra: <String, dynamic>{
+                                      kTransitionInfoKey: TransitionInfo(
+                                        hasTransition: true,
+                                        transitionType:
+                                            PageTransitionType.rightToLeft,
+                                      ),
+                                    },
+                                  );
+                                },
                                 child: Container(
                                   width: double.infinity,
                                   height: 150.0,
@@ -284,7 +296,9 @@ class _TribalsDashboardWidgetState extends State<TribalsDashboardWidget> {
                                   child: Align(
                                     alignment: AlignmentDirectional(0.00, 0.00),
                                     child: Text(
-                                      'Market Report',
+                                      FFLocalizations.of(context).getText(
+                                        'gtai3as3' /* Market Report */,
+                                      ),
                                       textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium

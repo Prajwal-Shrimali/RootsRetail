@@ -66,7 +66,9 @@ class _TribalDataEntryWidgetState extends State<TribalDataEntryWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                   child: Text(
-                    'Data Input Page',
+                    FFLocalizations.of(context).getText(
+                      'qp382i31' /* Data Input Page */,
+                    ),
                     style: FlutterFlowTheme.of(context).headlineMedium.override(
                           fontFamily: 'Outfit',
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -86,8 +88,12 @@ class _TribalDataEntryWidgetState extends State<TribalDataEntryWidget> {
                     ),
                     obscureText: false,
                     decoration: InputDecoration(
-                      labelText: 'Quantity',
-                      hintText: 'Enter quantity...',
+                      labelText: FFLocalizations.of(context).getText(
+                        'ilp8cu8u' /* Quantity */,
+                      ),
+                      hintText: FFLocalizations.of(context).getText(
+                        'q519tetj' /* Enter quantity... */,
+                      ),
                       hintStyle: FlutterFlowTheme.of(context).bodyLarge,
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -154,7 +160,9 @@ class _TribalDataEntryWidgetState extends State<TribalDataEntryWidget> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            'Produce',
+                            FFLocalizations.of(context).getText(
+                              'zyn8canv' /* Produce */,
+                            ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -175,7 +183,9 @@ class _TribalDataEntryWidgetState extends State<TribalDataEntryWidget> {
                     onPressed: () async {
                       context.pushNamed('Tribal_OrderConfirmation');
                     },
-                    text: 'Submit',
+                    text: FFLocalizations.of(context).getText(
+                      're7urrwn' /* Submit */,
+                    ),
                     options: FFButtonOptions(
                       width: double.infinity,
                       height: 55.0,

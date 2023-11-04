@@ -157,7 +157,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                     padding:
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 72.0),
                     child: Text(
-                      'Tribals',
+                      FFLocalizations.of(context).getText(
+                        '1gau6rn2' /* Tribals */,
+                      ),
                       style: FlutterFlowTheme.of(context).displaySmall,
                     ),
                   ),
@@ -225,10 +227,16 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                       indicatorWeight: 3.0,
                                       tabs: [
                                         Tab(
-                                          text: 'Merchant',
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'ndfer5fi' /* Merchant */,
+                                          ),
                                         ),
                                         Tab(
-                                          text: 'Tribal',
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'kgy2nycs' /* Tribal */,
+                                          ),
                                         ),
                                       ],
                                       controller: _model.tabBarController,
@@ -276,7 +284,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                             AlignmentDirectional(
                                                                 0.00, 0.00),
                                                         child: Text(
-                                                          'Welcome Back',
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                            'xyfw3412' /* Welcome Back */,
+                                                          ),
                                                           textAlign:
                                                               TextAlign.start,
                                                           style: FlutterFlowTheme
@@ -309,7 +321,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                             decoration:
                                                                 InputDecoration(
                                                               labelText:
-                                                                  'Email',
+                                                                  FFLocalizations.of(
+                                                                          context)
+                                                                      .getText(
+                                                                'houhgelx' /* Email */,
+                                                              ),
                                                               labelStyle:
                                                                   FlutterFlowTheme.of(
                                                                           context)
@@ -432,7 +448,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                               decoration:
                                                                   InputDecoration(
                                                                 labelText:
-                                                                    'Password',
+                                                                    FFLocalizations.of(
+                                                                            context)
+                                                                        .getText(
+                                                                  'awyvdoh0' /* Password */,
+                                                                ),
                                                                 labelStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                     .titleMedium
@@ -582,11 +602,15 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                               }
 
                                                               context.goNamedAuth(
-                                                                  'TribalsDashboard',
+                                                                  'MerchantDashboard',
                                                                   context
                                                                       .mounted);
                                                             },
-                                                            text: 'Sign in',
+                                                            text: FFLocalizations
+                                                                    .of(context)
+                                                                .getText(
+                                                              'jrv5553q' /* Sign in */,
+                                                            ),
                                                             options:
                                                                 FFButtonOptions(
                                                               width: 230.0,
@@ -650,7 +674,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                                           16.0,
                                                                           24.0),
                                                               child: Text(
-                                                                'Or sign in with',
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'fc6y3i0v' /* Or sign in with */,
+                                                                ),
                                                                 textAlign:
                                                                     TextAlign
                                                                         .center,
@@ -713,11 +741,14 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                                         }
 
                                                                         context.goNamedAuth(
-                                                                            'TribalsDashboard',
+                                                                            'MerchantDashboard',
                                                                             context.mounted);
                                                                       },
-                                                                      text:
-                                                                          'Continue with Google',
+                                                                      text: FFLocalizations.of(
+                                                                              context)
+                                                                          .getText(
+                                                                        'ai1x4vx9' /* Continue with Google */,
+                                                                      ),
                                                                       icon:
                                                                           FaIcon(
                                                                         FontAwesomeIcons
@@ -784,8 +815,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                               text: TextSpan(
                                                 children: [
                                                   TextSpan(
-                                                    text:
-                                                        'Dont have a account.',
+                                                    text: FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      '2qyol94u' /* Dont have a account. */,
+                                                    ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
@@ -800,7 +834,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                         ),
                                                   ),
                                                   TextSpan(
-                                                    text: ' Sign Up',
+                                                    text: FFLocalizations.of(
+                                                            context)
+                                                        .getText(
+                                                      'dvt8z5sp' /*  Sign Up */,
+                                                    ),
                                                     style: TextStyle(
                                                       color:
                                                           FlutterFlowTheme.of(
@@ -858,7 +896,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                                   0.0,
                                                                   100.0),
                                                       child: Text(
-                                                        'Welcome Back',
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                          'c8qp0mlb' /* Welcome Back */,
+                                                        ),
                                                         textAlign:
                                                             TextAlign.start,
                                                         style:
@@ -885,7 +927,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                           context.pushNamed(
                                                               'TribalsDashboard');
                                                         },
-                                                        text: 'Sign In',
+                                                        text:
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                          '6p2s5kx8' /* Sign In */,
+                                                        ),
                                                         options:
                                                             FFButtonOptions(
                                                           width: 230.0,
@@ -943,8 +990,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                       text: TextSpan(
                                                         children: [
                                                           TextSpan(
-                                                            text:
-                                                                'Dont have a account.',
+                                                            text: FFLocalizations
+                                                                    .of(context)
+                                                                .getText(
+                                                              'yquvr059' /* Dont have a account. */,
+                                                            ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
                                                                 .bodyMedium
@@ -960,7 +1010,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                                 ),
                                                           ),
                                                           TextSpan(
-                                                            text: ' Sign Up',
+                                                            text: FFLocalizations
+                                                                    .of(context)
+                                                                .getText(
+                                                              'mhbd3t4o' /*  Sign Up */,
+                                                            ),
                                                             style: TextStyle(
                                                               color: FlutterFlowTheme
                                                                       .of(context)

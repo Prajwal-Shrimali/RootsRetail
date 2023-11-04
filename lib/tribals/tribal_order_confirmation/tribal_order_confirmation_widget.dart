@@ -106,7 +106,9 @@ class _TribalOrderConfirmationWidgetState
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Your Listing',
+                            FFLocalizations.of(context).getText(
+                              'lo9hz1f5' /* Your Listing */,
+                            ),
                             style: FlutterFlowTheme.of(context).titleLarge,
                           ),
                           Padding(
@@ -181,7 +183,11 @@ class _TribalOrderConfirmationWidgetState
                                                             .start,
                                                     children: [
                                                       Text(
-                                                        'Onion',
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                          'y3rjx2dg' /* Onion */,
+                                                        ),
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -203,12 +209,20 @@ class _TribalOrderConfirmationWidgetState
                                                           text: TextSpan(
                                                             children: [
                                                               TextSpan(
-                                                                text: 'Size: ',
+                                                                text: FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'ufs5j8rb' /* Size:  */,
+                                                                ),
                                                                 style:
                                                                     TextStyle(),
                                                               ),
                                                               TextSpan(
-                                                                text: '12',
+                                                                text: FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'jkafbvu5' /* 12 */,
+                                                                ),
                                                                 style:
                                                                     TextStyle(),
                                                               )
@@ -228,7 +242,10 @@ class _TribalOrderConfirmationWidgetState
                                                     .fromSTEB(
                                                         8.0, 0.0, 0.0, 0.0),
                                                 child: Text(
-                                                  '\$124.00',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    'azfhox2g' /* $124.00 */,
+                                                  ),
                                                   textAlign: TextAlign.end,
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -326,7 +343,11 @@ class _TribalOrderConfirmationWidgetState
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      'Patato',
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '0toxxx1q' /* Patato */,
+                                                      ),
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
@@ -348,12 +369,20 @@ class _TribalOrderConfirmationWidgetState
                                                         text: TextSpan(
                                                           children: [
                                                             TextSpan(
-                                                              text: 'Size: ',
+                                                              text: FFLocalizations
+                                                                      .of(context)
+                                                                  .getText(
+                                                                'fj6ducdm' /* Size:  */,
+                                                              ),
                                                               style:
                                                                   TextStyle(),
                                                             ),
                                                             TextSpan(
-                                                              text: '12',
+                                                              text: FFLocalizations
+                                                                      .of(context)
+                                                                  .getText(
+                                                                'd4t835xj' /* 12 */,
+                                                              ),
                                                               style:
                                                                   TextStyle(),
                                                             )
@@ -372,7 +401,10 @@ class _TribalOrderConfirmationWidgetState
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(8.0, 0.0, 0.0, 0.0),
                                               child: Text(
-                                                '\$117.00',
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'h1d4tj6y' /* $117.00 */,
+                                                ),
                                                 textAlign: TextAlign.end,
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -423,7 +455,9 @@ class _TribalOrderConfirmationWidgetState
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Order Summary',
+                                  FFLocalizations.of(context).getText(
+                                    '8ofynfay' /* Order Summary */,
+                                  ),
                                   style:
                                       FlutterFlowTheme.of(context).titleLarge,
                                 ),
@@ -444,7 +478,9 @@ class _TribalOrderConfirmationWidgetState
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Text(
-                                          'Price Breakdown',
+                                          FFLocalizations.of(context).getText(
+                                            'm5ocldnd' /* Price Breakdown */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium,
                                         ),
@@ -458,7 +494,10 @@ class _TribalOrderConfirmationWidgetState
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text(
-                                              'Base Price',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                '3c9lkdxr' /* Base Price */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall
@@ -474,7 +513,10 @@ class _TribalOrderConfirmationWidgetState
                                                       ),
                                             ),
                                             Text(
-                                              '\$156.00',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'biauvwrg' /* $156.00 */,
+                                              ),
                                               textAlign: TextAlign.end,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -492,7 +534,10 @@ class _TribalOrderConfirmationWidgetState
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text(
-                                              'Taxes',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'fd1561k9' /* Taxes */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall
@@ -508,7 +553,10 @@ class _TribalOrderConfirmationWidgetState
                                                       ),
                                             ),
                                             Text(
-                                              '\$24.20',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                '3s3ph3i5' /* $24.20 */,
+                                              ),
                                               textAlign: TextAlign.end,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -526,7 +574,10 @@ class _TribalOrderConfirmationWidgetState
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text(
-                                              'Cleaning Fee',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'f8wixhge' /* Cleaning Fee */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall
@@ -542,7 +593,10 @@ class _TribalOrderConfirmationWidgetState
                                                       ),
                                             ),
                                             Text(
-                                              '\$40.00',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'r9ac6wmk' /* $40.00 */,
+                                              ),
                                               textAlign: TextAlign.end,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -563,7 +617,10 @@ class _TribalOrderConfirmationWidgetState
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Text(
-                                                  'Estimated Earnings',
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                    '1hzjemaa' /* Estimated Earnings */,
+                                                  ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .titleMedium
@@ -599,7 +656,10 @@ class _TribalOrderConfirmationWidgetState
                                               ],
                                             ),
                                             Text(
-                                              '\$230.20',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'fyp2xvi4' /* $230.20 */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .displaySmall,
@@ -625,7 +685,9 @@ class _TribalOrderConfirmationWidgetState
                   onPressed: () {
                     print('Button pressed ...');
                   },
-                  text: 'Continue ',
+                  text: FFLocalizations.of(context).getText(
+                    'yae85ddk' /* Continue  */,
+                  ),
                   options: FFButtonOptions(
                     width: double.infinity,
                     height: 50.0,

@@ -63,7 +63,9 @@ class _TribalSuccessPageWidgetState extends State<TribalSuccessPageWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
                   child: Text(
-                    'Congrats!',
+                    FFLocalizations.of(context).getText(
+                      '3nt6gy3v' /* Congrats! */,
+                    ),
                     style: FlutterFlowTheme.of(context).headlineMedium.override(
                           fontFamily: 'Outfit',
                           color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -86,7 +88,9 @@ class _TribalSuccessPageWidgetState extends State<TribalSuccessPageWidget> {
                         },
                       );
                     },
-                    text: 'Next',
+                    text: FFLocalizations.of(context).getText(
+                      'o1wzpncs' /* Next */,
+                    ),
                     options: FFButtonOptions(
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),

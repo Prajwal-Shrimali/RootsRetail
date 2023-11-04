@@ -149,7 +149,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
           backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
           automaticallyImplyLeading: false,
           title: Text(
-            'Dashboard',
+            FFLocalizations.of(context).getText(
+              'k081bgdi' /* Merchant Dashboard */,
+            ),
             style: FlutterFlowTheme.of(context).headlineMedium,
           ),
           actions: [
@@ -161,12 +163,20 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                 borderWidth: 1.0,
                 buttonSize: 60.0,
                 icon: Icon(
-                  Icons.account_circle_outlined,
+                  Icons.account_circle,
                   color: FlutterFlowTheme.of(context).primary,
-                  size: 30.0,
+                  size: 45.0,
                 ),
-                onPressed: () {
-                  print('IconButton pressed ...');
+                onPressed: () async {
+                  context.pushNamed(
+                    'MerchantProfile',
+                    extra: <String, dynamic>{
+                      kTransitionInfoKey: TransitionInfo(
+                        hasTransition: true,
+                        transitionType: PageTransitionType.rightToLeft,
+                      ),
+                    },
+                  );
                 },
               ),
             ),
@@ -206,7 +216,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                           padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            'Below is a summary of your day.',
+                            FFLocalizations.of(context).getText(
+                              'mf8ex31g' /* Below is a summary of your Ord... */,
+                            ),
                             style: FlutterFlowTheme.of(context).labelMedium,
                           ),
                         ),
@@ -243,7 +255,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            '16',
+                                            FFLocalizations.of(context).getText(
+                                              '5d5v430s' /* 16 */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .displaySmall,
                                           ),
@@ -252,7 +266,10 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Text(
-                                              'Ongoing Order',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                '9of8m427' /* Ongoing Order */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium,
@@ -286,7 +303,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            '25',
+                                            FFLocalizations.of(context).getText(
+                                              's2v1p9l9' /* 25 */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .displaySmall
                                                 .override(
@@ -301,7 +320,10 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Text(
-                                              'Accepted',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'atrbtt99' /* Accepted */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium,
@@ -335,7 +357,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            '1',
+                                            FFLocalizations.of(context).getText(
+                                              'oo5rrbke' /* 1 */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .displaySmall
                                                 .override(
@@ -350,7 +374,10 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Text(
-                                              'Rejected',
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                                'lr7m46xl' /* Rejected */,
+                                              ),
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .labelMedium,
@@ -407,7 +434,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'Order Status',
+                                        FFLocalizations.of(context).getText(
+                                          'i36kpmqw' /* Order Status */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall,
                                       ),
@@ -415,7 +444,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
-                                          'An overview of your Order.',
+                                          FFLocalizations.of(context).getText(
+                                            'q5ysi83d' /* An overview of your Order. */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium,
                                         ),
@@ -446,7 +477,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        '15/26',
+                                        FFLocalizations.of(context).getText(
+                                          'totxfmjg' /* 15/26 */,
+                                        ),
                                         style: FlutterFlowTheme.of(context)
                                             .displaySmall,
                                       ),
@@ -454,7 +487,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
-                                          'Order progress',
+                                          FFLocalizations.of(context).getText(
+                                            '7333i9pm' /* Order progress */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium,
                                         ),
@@ -544,7 +579,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          'Generate Order',
+                                          FFLocalizations.of(context).getText(
+                                            'qt0z930i' /* Generate Order */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .headlineSmall,
                                         ),
@@ -553,7 +590,9 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 6.0),
                                           child: Text(
-                                            'Generate your Order.',
+                                            FFLocalizations.of(context).getText(
+                                              'ua8af1yg' /* Generate your Order. */,
+                                            ),
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium,
                                           ),

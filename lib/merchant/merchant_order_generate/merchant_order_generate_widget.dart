@@ -71,9 +71,11 @@ class _MerchantOrderGenerateWidgetState
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 290.0, 0.0, 30.0),
+                      EdgeInsetsDirectional.fromSTEB(0.0, 250.0, 0.0, 30.0),
                   child: Text(
-                    'Order Generating Screen',
+                    FFLocalizations.of(context).getText(
+                      'cylcdrj3' /* Order Generating Screen */,
+                    ),
                     style: FlutterFlowTheme.of(context).headlineMedium.override(
                           fontFamily: 'Outfit',
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -88,8 +90,12 @@ class _MerchantOrderGenerateWidgetState
                     focusNode: _model.textFieldFocusNode1,
                     obscureText: false,
                     decoration: InputDecoration(
-                      labelText: 'Produce Required',
-                      hintText: 'Enter produce name',
+                      labelText: FFLocalizations.of(context).getText(
+                        '6abc9hc2' /* Produce Required */,
+                      ),
+                      hintText: FFLocalizations.of(context).getText(
+                        'qcu8jsur' /* Enter produce name */,
+                      ),
                       hintStyle: FlutterFlowTheme.of(context).bodyLarge,
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -133,8 +139,12 @@ class _MerchantOrderGenerateWidgetState
                     focusNode: _model.textFieldFocusNode2,
                     obscureText: false,
                     decoration: InputDecoration(
-                      labelText: 'Quantity Required',
-                      hintText: 'Enter quantity',
+                      labelText: FFLocalizations.of(context).getText(
+                        'af467bp6' /* Quantity Required */,
+                      ),
+                      hintText: FFLocalizations.of(context).getText(
+                        'c0efnrnq' /* Enter quantity */,
+                      ),
                       hintStyle: FlutterFlowTheme.of(context).bodyLarge,
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -180,8 +190,12 @@ class _MerchantOrderGenerateWidgetState
                     focusNode: _model.tribeNameFocusNode,
                     obscureText: false,
                     decoration: InputDecoration(
-                      labelText: 'Tribe Name',
-                      hintText: 'Enter Tribe Name',
+                      labelText: FFLocalizations.of(context).getText(
+                        '7d2nxgjo' /* Expected Earnings */,
+                      ),
+                      hintText: FFLocalizations.of(context).getText(
+                        'ttuui46p' /* Enter approximate earnings */,
+                      ),
                       hintStyle: FlutterFlowTheme.of(context).bodyLarge,
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -223,7 +237,9 @@ class _MerchantOrderGenerateWidgetState
                     onPressed: () {
                       print('Button pressed ...');
                     },
-                    text: 'Generate Order',
+                    text: FFLocalizations.of(context).getText(
+                      'c2y5vg40' /* Generate Order */,
+                    ),
                     options: FFButtonOptions(
                       width: double.infinity,
                       height: 55.0,
