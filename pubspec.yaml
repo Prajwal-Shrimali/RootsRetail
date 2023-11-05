@@ -46,6 +46,7 @@ dependencies:
   firebase_performance_web: 0.1.4+2
   flutter_animate: 4.1.1+1
   flutter_cache_manager: 3.3.0
+  flutter_native_splash: 2.3.1
   flutter_plugin_android_lifecycle: 2.0.9
   font_awesome_flutter: 10.1.0
   from_css_color: 2.0.0
@@ -86,6 +87,7 @@ dependencies:
   sqflite: 2.2.6
   stream_transform: 2.1.0
   timeago: 3.2.2
+  universal_io: 2.2.2
   url_launcher: 6.1.10
   url_launcher_android: 6.0.27
   url_launcher_ios: 6.1.4
@@ -95,6 +97,7 @@ dependencies:
   webview_flutter_platform_interface: 2.0.2
   webview_flutter_wkwebview: 3.1.1
   webviewx_plus: 0.3.3
+  xml: 6.3.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -102,11 +105,23 @@ dependencies:
   cupertino_icons: ^1.0.0
 
 dev_dependencies:
+  flutter_launcher_icons: 0.13.1
   flutter_lints: 3.0.0
+  image: 4.0.17
   lints: 3.0.0
 
   flutter_test:
     sdk: flutter
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  web:
+    generate: true
+  image_path: 'assets/images/app_launcher_icon.png'
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

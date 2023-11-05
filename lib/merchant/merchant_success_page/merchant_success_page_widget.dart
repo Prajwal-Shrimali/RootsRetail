@@ -51,7 +51,7 @@ class _MerchantSuccessPageWidgetState extends State<MerchantSuccessPageWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF40FFA9),
+        backgroundColor: Color(0xFF007244),
         body: SafeArea(
           top: true,
           child: Align(
@@ -64,12 +64,12 @@ class _MerchantSuccessPageWidgetState extends State<MerchantSuccessPageWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'jqdqu19d' /* Congrats! */,
+                      'jqdqu19d' /* Success! */,
                     ),
                     style: FlutterFlowTheme.of(context).headlineMedium.override(
                           fontFamily: 'Outfit',
                           color: FlutterFlowTheme.of(context).primaryBtnText,
-                          fontSize: 32.0,
+                          fontSize: 40.0,
                           fontWeight: FontWeight.w500,
                         ),
                   ),

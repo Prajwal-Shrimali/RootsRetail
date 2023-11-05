@@ -145,7 +145,7 @@ class _TribalListingViewWidgetState extends State<TribalListingViewWidget> {
                                           AlignmentDirectional(-1.00, 0.00),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'ynm8kcrl' /* Quoted Price  */,
+                                          'n8iiobuj' /* Quoted Price  */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,
@@ -156,7 +156,7 @@ class _TribalListingViewWidgetState extends State<TribalListingViewWidget> {
                                           AlignmentDirectional(1.00, 0.00),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'uoie7m5u' /* Rs. 4000 */,
+                                          'aq036hla' /* Rs. 4000 */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -365,7 +365,7 @@ class _TribalListingViewWidgetState extends State<TribalListingViewWidget> {
                                           AlignmentDirectional(-1.00, 0.00),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'm39vfqhu' /* Quoted Price  */,
+                                          'k058w8xd' /* Quoted Price  */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,
@@ -376,7 +376,7 @@ class _TribalListingViewWidgetState extends State<TribalListingViewWidget> {
                                           AlignmentDirectional(1.00, 0.00),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'oxyhnha1' /* Rs. 4000 */,
+                                          '1n5jr1yz' /* Rs. 4000 */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -582,7 +582,7 @@ class _TribalListingViewWidgetState extends State<TribalListingViewWidget> {
                                           AlignmentDirectional(-1.00, 0.00),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          '2vd83u14' /* Quoted Price  */,
+                                          'icz290sm' /* Quoted Price  */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,
@@ -593,7 +593,7 @@ class _TribalListingViewWidgetState extends State<TribalListingViewWidget> {
                                           AlignmentDirectional(1.00, 0.00),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'd7g6lp6p' /* Rs. 3587 */,
+                                          '33jwmtzf' /* Rs. 3587 */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium

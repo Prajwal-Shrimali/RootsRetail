@@ -385,7 +385,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Tribal_OrderConfirmation
   {
     'lo9hz1f5': {
-      'en': 'Your Listing',
+      'en': 'Your Updates',
       'ta': 'உங்கள் பட்டியல்',
     },
     'y3rjx2dg': {
@@ -421,7 +421,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '117.00ரூ',
     },
     '8ofynfay': {
-      'en': 'Order Summary',
+      'en': 'Summary',
       'ta': 'ஆர்டர் சுருக்கம்',
     },
     'm5ocldnd': {
@@ -652,7 +652,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // MerchantSuccessPage
   {
     'jqdqu19d': {
-      'en': 'Congrats!',
+      'en': 'Success!',
       'ta': 'வாழ்த்துக்கள்!',
     },
     'cz0ck60g': {
@@ -670,11 +670,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Potatoes\n',
       'ta': 'உருளைக்கிழங்கு',
     },
-    'ynm8kcrl': {
+    'n8iiobuj': {
       'en': 'Quoted Price ',
       'ta': '',
     },
-    'uoie7m5u': {
+    'aq036hla': {
       'en': 'Rs. 4000',
       'ta': '',
     },
@@ -698,11 +698,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Potatoes\n',
       'ta': 'உருளைக்கிழங்கு',
     },
-    'm39vfqhu': {
+    'k058w8xd': {
       'en': 'Quoted Price ',
       'ta': '',
     },
-    'oxyhnha1': {
+    '1n5jr1yz': {
       'en': 'Rs. 4000',
       'ta': '',
     },
@@ -726,11 +726,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Onions',
       'ta': 'உருளைக்கிழங்கு',
     },
-    '2vd83u14': {
+    'icz290sm': {
       'en': 'Quoted Price ',
       'ta': '',
     },
-    'd7g6lp6p': {
+    '33jwmtzf': {
       'en': 'Rs. 3587',
       'ta': '',
     },
@@ -780,11 +780,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // MerchantMyOrderView
   {
-    '9an2j5ju': {
+    'g29v3orp': {
       'en': 'Potatoes',
       'ta': '',
     },
-    'bmswuizz': {
+    'wuj0r0ys': {
       'en': 'Rs. 4000',
       'ta': '',
     },
@@ -796,11 +796,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '2 hours ago',
       'ta': '2 மணி நேரத்திற்கு முன்பு',
     },
-    '8qib0qyz': {
+    'vchfxet8': {
       'en': 'Potatoes',
       'ta': '',
     },
-    'ksj0ajrp': {
+    'bklm9wtl': {
       'en': 'Rs. 3509',
       'ta': '',
     },
@@ -812,11 +812,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '2 hours ago',
       'ta': '2 மணி நேரத்திற்கு முன்பு',
     },
-    '6tnrkdoe': {
+    'a8oxo3xc': {
       'en': 'Onion',
       'ta': '',
     },
-    'et5no6ug': {
+    'ux4wsjon': {
       'en': 'Rs. 9000',
       'ta': '',
     },
@@ -828,11 +828,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '2 hours ago',
       'ta': '2 மணி நேரத்திற்கு முன்பு',
     },
-    'floorfa9': {
+    '5gbhghb3': {
       'en': 'Bananas',
       'ta': '',
     },
-    '55yztehh': {
+    'a5z0kbeh': {
       'en': 'Rs. 4000',
       'ta': '',
     },
@@ -844,11 +844,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '2 hours ago',
       'ta': '2 மணி நேரத்திற்கு முன்பு',
     },
-    'waw9w5vd': {
+    '4c7m1fij': {
       'en': 'Apples',
       'ta': '',
     },
-    'oja9fo4i': {
+    '2z671r8p': {
       'en': 'Rs. 10000',
       'ta': '',
     },

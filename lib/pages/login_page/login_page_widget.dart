@@ -335,7 +335,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                                         fontFamily:
                                                                             'Readex Pro',
                                                                         color: FlutterFlowTheme.of(context)
-                                                                            .secondaryText,
+                                                                            .primaryText,
                                                                       ),
                                                               enabledBorder:
                                                                   OutlineInputBorder(
@@ -462,7 +462,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                                           'Readex Pro',
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .secondaryText,
+                                                                          .primaryText,
                                                                     ),
                                                                 enabledBorder:
                                                                     OutlineInputBorder(

@@ -107,7 +107,7 @@ class _TribalOrderConfirmationWidgetState
                         children: [
                           Text(
                             FFLocalizations.of(context).getText(
-                              'lo9hz1f5' /* Your Listing */,
+                              'lo9hz1f5' /* Your Updates */,
                             ),
                             style: FlutterFlowTheme.of(context).titleLarge,
                           ),
@@ -159,7 +159,7 @@ class _TribalOrderConfirmationWidgetState
                                                       BorderRadius.circular(
                                                           12.0),
                                                   child: Image.network(
-                                                    'https://png.pngtree.com/png-clipart/20210613/original/pngtree-shallot-or-red-onion-png-transparent-png-image_6402672.jpg',
+                                                    'https://static.vecteezy.com/system/resources/previews/001/992/951/non_2x/fresh-onion-healthy-vegetable-icon-free-vector.jpg',
                                                     width: 70.0,
                                                     height: 70.0,
                                                     fit: BoxFit.cover,
@@ -456,7 +456,7 @@ class _TribalOrderConfirmationWidgetState
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    '8ofynfay' /* Order Summary */,
+                                    '8ofynfay' /* Summary */,
                                   ),
                                   style:
                                       FlutterFlowTheme.of(context).titleLarge,

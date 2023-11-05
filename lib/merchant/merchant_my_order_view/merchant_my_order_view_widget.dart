@@ -133,7 +133,7 @@ class _MerchantMyOrderViewWidgetState extends State<MerchantMyOrderViewWidget> {
                                         AlignmentDirectional(-1.00, 0.00),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        '9an2j5ju' /* Potatoes */,
+                                        'g29v3orp' /* Potatoes */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
@@ -143,7 +143,7 @@ class _MerchantMyOrderViewWidgetState extends State<MerchantMyOrderViewWidget> {
                                     alignment: AlignmentDirectional(1.00, 0.00),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'bmswuizz' /* Rs. 4000 */,
+                                        'wuj0r0ys' /* Rs. 4000 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
@@ -253,7 +253,7 @@ class _MerchantMyOrderViewWidgetState extends State<MerchantMyOrderViewWidget> {
                                         AlignmentDirectional(-1.00, 0.00),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        '8qib0qyz' /* Potatoes */,
+                                        'vchfxet8' /* Potatoes */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
@@ -263,7 +263,7 @@ class _MerchantMyOrderViewWidgetState extends State<MerchantMyOrderViewWidget> {
                                     alignment: AlignmentDirectional(1.00, 0.00),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'ksj0ajrp' /* Rs. 3509 */,
+                                        'bklm9wtl' /* Rs. 3509 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
@@ -373,7 +373,7 @@ class _MerchantMyOrderViewWidgetState extends State<MerchantMyOrderViewWidget> {
                                         AlignmentDirectional(-1.00, 0.00),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        '6tnrkdoe' /* Onion */,
+                                        'a8oxo3xc' /* Onion */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
@@ -383,7 +383,7 @@ class _MerchantMyOrderViewWidgetState extends State<MerchantMyOrderViewWidget> {
                                     alignment: AlignmentDirectional(1.00, 0.00),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'et5no6ug' /* Rs. 9000 */,
+                                        'ux4wsjon' /* Rs. 9000 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
@@ -493,7 +493,7 @@ class _MerchantMyOrderViewWidgetState extends State<MerchantMyOrderViewWidget> {
                                         AlignmentDirectional(-1.00, 0.00),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'floorfa9' /* Bananas */,
+                                        '5gbhghb3' /* Bananas */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
@@ -503,7 +503,7 @@ class _MerchantMyOrderViewWidgetState extends State<MerchantMyOrderViewWidget> {
                                     alignment: AlignmentDirectional(1.00, 0.00),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        '55yztehh' /* Rs. 4000 */,
+                                        'a5z0kbeh' /* Rs. 4000 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
@@ -613,7 +613,7 @@ class _MerchantMyOrderViewWidgetState extends State<MerchantMyOrderViewWidget> {
                                         AlignmentDirectional(-1.00, 0.00),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'waw9w5vd' /* Apples */,
+                                        '4c7m1fij' /* Apples */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
@@ -623,7 +623,7 @@ class _MerchantMyOrderViewWidgetState extends State<MerchantMyOrderViewWidget> {
                                     alignment: AlignmentDirectional(1.00, 0.00),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
-                                        'oja9fo4i' /* Rs. 10000 */,
+                                        '2z671r8p' /* Rs. 10000 */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
