@@ -108,8 +108,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // LoginPage
   {
     '1gau6rn2': {
-      'en': 'Tribals',
-      'ta': 'பழங்குடியினர்',
+      'en': 'RootRetails',
+      'ta': 'ரூட் ரீடெய்ல்ஸ்',
     },
     'ndfer5fi': {
       'en': 'Merchant',
@@ -148,16 +148,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பதிவு செய்யவும்',
     },
     'kgy2nycs': {
-      'en': 'Tribal',
-      'ta': 'பழங்குடி',
+      'en': 'Consumer',
+      'ta': 'நுகர்வோர்',
     },
     'c8qp0mlb': {
-      'en': 'Welcome Back',
-      'ta': 'மீண்டும் வருக',
+      'en': 'Welcome Chief!',
+      'ta': 'வருக தலைவரே!',
     },
     '6p2s5kx8': {
-      'en': 'Sign In',
+      'en': '',
       'ta': 'உள்நுழையவும்',
+    },
+    'jg2qp1o1': {
+      'en': 'Kindly place your finger here.',
+      'ta': 'தயவுசெய்து உங்கள் விரலை இங்கே வைக்கவும்.',
+    },
+    'sifvr60l': {
+      'en': 'Press Here!',
+      'ta': 'இங்கே அழுத்தவும்!',
     },
     'yquvr059': {
       'en': 'Dont have a account.',
@@ -252,8 +260,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சரக்குகளைப் புதுப்பிக்கவும்',
     },
     'g1t9imdz': {
-      'en': '',
-      'ta': 'பங்கு பொருட்கள்',
+      'en': 'View Live Costs',
+      'ta': 'நேரலைச் செலவுகளைக் காண்க',
     },
     'h4an8zzx': {
       'en': 'View Merchant Request',
@@ -263,6 +271,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Market Report',
       'ta': 'சந்தை அறிக்கை',
     },
+    'a9smp9kl': {
+      'en': 'Logout',
+      'ta': 'வெளியேறு',
+    },
     'bl5ry228': {
       'en': 'Home',
       'ta': 'வீடு',
@@ -271,7 +283,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // TribalsSignUp
   {
     '9taxauo0': {
-      'en': 'Tribals',
+      'en': 'RootsRetail',
       'ta': 'பழங்குடியினர்',
     },
     'u3o2uue7': {
@@ -287,8 +299,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பழங்குடி பெயர்',
     },
     'd7j3oqfz': {
-      'en': 'Your Start Produce',
-      'ta': 'உங்கள் தொடக்க தயாரிப்பு',
+      'en': 'Your Star Produce',
+      'ta': 'உங்கள் நட்சத்திர தயாரிப்பு',
     },
     '65dccg2z': {
       'en': 'Create Account',
@@ -303,7 +315,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'mf8ex31g': {
       'en': 'Below is a summary of your Orders',
-      'ta': 'உங்கள் நாளின் சுருக்கம் கீழே உள்ளது.',
+      'ta': 'உங்கள் ஆர்டர்களின் சுருக்கம் கீழே உள்ளது',
     },
     '5d5v430s': {
       'en': '16',
@@ -326,7 +338,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '1',
     },
     'lr7m46xl': {
-      'en': 'Rejected',
+      'en': 'Pending',
       'ta': 'நிராகரிக்கப்பட்டது',
     },
     'i36kpmqw': {
@@ -353,9 +365,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Generate your Order.',
       'ta': 'உங்கள் ஆர்டரை உருவாக்கவும்.',
     },
+    '3g92iyv0': {
+      'en': 'My Orders',
+      'ta': 'என் கட்டளைகள்',
+    },
+    'w332544j': {
+      'en': 'Generate your Orders',
+      'ta': 'உங்கள் ஆர்டர்களை உருவாக்கவும்',
+    },
     'k081bgdi': {
       'en': 'Merchant Dashboard',
-      'ta': 'டாஷ்போர்டு',
+      'ta': 'வணிக டாஷ்போர்டு',
     },
     'ei791vnw': {
       'en': 'Home',
@@ -373,32 +393,32 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'வெங்காயம்',
     },
     'ufs5j8rb': {
-      'en': 'Size: ',
+      'en': 'Quantity: ',
       'ta': 'அளவு:',
     },
     'jkafbvu5': {
-      'en': '12',
-      'ta': '12',
+      'en': '12 Quintal',
+      'ta': '12 குவிண்டால்',
     },
     'azfhox2g': {
-      'en': '\$124.00',
-      'ta': '\$124.00',
+      'en': '124.00Rs',
+      'ta': '124.00ரூ',
     },
     '0toxxx1q': {
       'en': 'Patato',
       'ta': 'பட்டாடோ',
     },
     'fj6ducdm': {
-      'en': 'Size: ',
+      'en': 'Quantity: ',
       'ta': 'அளவு:',
     },
     'd4t835xj': {
-      'en': '12',
-      'ta': '12',
+      'en': '8 Quintal',
+      'ta': '8 குவிண்டால்',
     },
     'h1d4tj6y': {
-      'en': '\$117.00',
-      'ta': '\$117.00',
+      'en': '117.00Rs',
+      'ta': '117.00ரூ',
     },
     '8ofynfay': {
       'en': 'Order Summary',
@@ -413,32 +433,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'அடிப்படை விலை',
     },
     'biauvwrg': {
-      'en': '\$156.00',
-      'ta': '\$156.00',
+      'en': '40000',
+      'ta': '40000',
     },
     'fd1561k9': {
       'en': 'Taxes',
       'ta': 'வரிகள்',
     },
     '3s3ph3i5': {
-      'en': '\$24.20',
-      'ta': '\$24.20',
-    },
-    'f8wixhge': {
-      'en': 'Cleaning Fee',
-      'ta': 'சுத்தம் கட்டணம்',
-    },
-    'r9ac6wmk': {
-      'en': '\$40.00',
-      'ta': '\$40.00',
+      'en': '5000',
+      'ta': '5000',
     },
     '1hzjemaa': {
       'en': 'Estimated Earnings',
       'ta': 'மதிப்பிடப்பட்ட வருவாய்',
     },
     'fyp2xvi4': {
-      'en': '\$230.20',
-      'ta': '\$230.20',
+      'en': '35000Rs',
+      'ta': '35000ரூ',
     },
     'yae85ddk': {
       'en': 'Continue ',
@@ -452,7 +464,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // TribalDataEntry
   {
     'qp382i31': {
-      'en': 'Data Input Page',
+      'en': 'Inventory Update Page',
       'ta': 'தரவு உள்ளீட்டு பக்கம்',
     },
     'ilp8cu8u': {
@@ -463,9 +475,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Enter quantity...',
       'ta': 'அளவை உள்ளிடவும்...',
     },
-    'zyn8canv': {
+    '59rlt8h7': {
       'en': 'Produce',
-      'ta': 'உற்பத்தி செய்',
+      'ta': 'அளவு',
+    },
+    'edbe3d38': {
+      'en': 'Enter the name of the produce...',
+      'ta': 'அளவை உள்ளிடவும்...',
     },
     're7urrwn': {
       'en': 'Submit',
@@ -511,11 +527,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '7d2nxgjo': {
       'en': 'Expected Earnings',
-      'ta': 'பழங்குடி பெயர்',
+      'ta': 'எதிர்பார்த்த வருமானம்',
     },
     'ttuui46p': {
       'en': 'Enter approximate earnings',
-      'ta': 'பழங்குடி பெயரை உள்ளிடவும்',
+      'ta': 'தோராயமான வருமானத்தை உள்ளிடவும்',
     },
     'c2y5vg40': {
       'en': 'Generate Order',
@@ -526,100 +542,339 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'ah6hq3ey': {
       'en': 'Naachiyapan S',
-      'ta': '',
+      'ta': 'நாச்சியப்பன் எஸ்',
+    },
+    '2j85n8nr': {
+      'en': 'Chennai,India',
+      'ta': 'உங்கள் கணக்கு',
     },
     'j47t60t7': {
       'en': 'Your Account',
-      'ta': '',
+      'ta': 'உங்கள் கணக்கு',
     },
     'ndf5hm09': {
       'en': 'Edit Profile',
-      'ta': '',
+      'ta': 'சுயவிவரத்தைத் திருத்து',
     },
     'miume6bo': {
       'en': 'Notification Settings',
-      'ta': '',
+      'ta': 'அறிவிப்பு அமைப்புகள்',
     },
     'cgv94jar': {
       'en': 'App Settings',
-      'ta': '',
+      'ta': 'பயன்பாட்டு அமைப்புகள்',
     },
     'wuw7zged': {
       'en': 'Support',
-      'ta': '',
+      'ta': 'ஆதரவு',
     },
     '5ivvyeou': {
       'en': 'Terms of Service',
-      'ta': '',
+      'ta': 'சேவை விதிமுறைகள்',
     },
     'n1upgyxm': {
       'en': 'Log Out',
-      'ta': '',
+      'ta': 'வெளியேறு',
     },
     'axb21k05': {
       'en': 'Home',
-      'ta': '',
+      'ta': 'வீடு',
     },
   },
   // MerchantNotificationSettings
   {
     '5540e15d': {
       'en': 'Notification Settings',
-      'ta': '',
+      'ta': 'அறிவிப்பு அமைப்புகள்',
     },
     'rva238n1': {
       'en': 'Push Notifications',
-      'ta': '',
+      'ta': 'புஷ் அறிவிப்புகள்',
     },
     'vcq0gih1': {
       'en': 'Email Notifications',
-      'ta': '',
+      'ta': 'மின்னஞ்சல் அறிவிப்புகள்',
     },
     'iq5csodg': {
       'en': 'SMS Notifications',
-      'ta': '',
+      'ta': 'SMS அறிவிப்புகள்',
     },
     '5mfpemo5': {
       'en': 'Event Reminders',
-      'ta': '',
+      'ta': 'நிகழ்வு நினைவூட்டல்கள்',
     },
     '49rxwpag': {
       'en': 'Sound Notifications',
-      'ta': '',
+      'ta': 'ஒலி அறிவிப்புகள்',
     },
     '3v2tnbki': {
       'en': 'Light Notifications',
-      'ta': '',
+      'ta': 'ஒளி அறிவிப்புகள்',
     },
     '1dru33n8': {
       'en': 'Do Not Disturb',
-      'ta': '',
+      'ta': 'தொந்தரவு செய்யாதீர்',
     },
   },
   // MerchantHelperBot
   {
     '0e2ocsnv': {
       'en': 'Merchant Help Bot',
-      'ta': '',
+      'ta': 'வணிகர் உதவி பாட்',
     },
     'c3y4ux3l': {
       'en': 'Home',
-      'ta': '',
+      'ta': 'வீடு',
     },
   },
   // TribalNewsSection
   {
-    'o52v793z': {
+    'gqi4qe2i': {
       'en': 'Market News',
+      'ta': 'சந்தை செய்திகள்',
+    },
+    '7b8ceomh': {
+      'en': 'Home',
+      'ta': 'வீடு',
+    },
+  },
+  // TribalsLivePriceView
+  {
+    'qm00ikj9': {
+      'en': 'Live Price Check',
+      'ta': 'நேரடி விலை சரிபார்ப்பு',
+    },
+    'qegf45w9': {
+      'en': 'Home',
+      'ta': 'வீடு',
+    },
+  },
+  // MerchantSuccessPage
+  {
+    'jqdqu19d': {
+      'en': 'Congrats!',
+      'ta': 'வாழ்த்துக்கள்!',
+    },
+    'cz0ck60g': {
+      'en': 'Next',
+      'ta': 'அடுத்தது',
+    },
+    'avyo2qkv': {
+      'en': 'Home',
+      'ta': 'வீடு',
+    },
+  },
+  // TribalListingView
+  {
+    'oau9b430': {
+      'en': 'Potatoes\n',
+      'ta': 'உருளைக்கிழங்கு',
+    },
+    'ynm8kcrl': {
+      'en': 'Quoted Price ',
       'ta': '',
     },
-    '82k4giby': {
-      'en': 'Home',
+    'uoie7m5u': {
+      'en': 'Rs. 4000',
       'ta': '',
+    },
+    'evndph9v': {
+      'en': '40 Kgs',
+      'ta': '40 கிலோ',
+    },
+    'otic78v0': {
+      'en': 'Jai Singh',
+      'ta': 'ஜெய் சிங்',
+    },
+    'm5lfkepg': {
+      'en': 'Ludhiana',
+      'ta': 'லூதியானா',
+    },
+    'uecaaxwh': {
+      'en': '2 hours ago',
+      'ta': '2 மணி நேரத்திற்கு முன்பு',
+    },
+    'yswfj5tc': {
+      'en': 'Potatoes\n',
+      'ta': 'உருளைக்கிழங்கு',
+    },
+    'm39vfqhu': {
+      'en': 'Quoted Price ',
+      'ta': '',
+    },
+    'oxyhnha1': {
+      'en': 'Rs. 4000',
+      'ta': '',
+    },
+    'd81fx5ul': {
+      'en': '40 Kgs',
+      'ta': '40 கிலோ',
+    },
+    '3jocy2sx': {
+      'en': 'Surya Adhikari',
+      'ta': 'சூர்யா அதிகாரி',
+    },
+    'vjs8hnip': {
+      'en': 'Kolkata',
+      'ta': 'கொல்கத்தா',
+    },
+    '0hzvtnn8': {
+      'en': '4 hours ago',
+      'ta': '4 மணி நேரத்திற்கு முன்பு',
+    },
+    'wy2atob8': {
+      'en': 'Onions',
+      'ta': 'உருளைக்கிழங்கு',
+    },
+    '2vd83u14': {
+      'en': 'Quoted Price ',
+      'ta': '',
+    },
+    'd7g6lp6p': {
+      'en': 'Rs. 3587',
+      'ta': '',
+    },
+    '5wngt9q1': {
+      'en': '30 Kgs',
+      'ta': '40 கிலோ',
+    },
+    'e1kzz22i': {
+      'en': 'Prabhakaran S',
+      'ta': 'பிரபாகரன் எஸ்',
+    },
+    'z78rwll7': {
+      'en': 'Chennai',
+      'ta': 'சென்னை',
+    },
+    '1p5mcihr': {
+      'en': '8 hours ago',
+      'ta': '8 மணி நேரத்திற்கு முன்பு',
+    },
+    '68rtj524': {
+      'en': 'Your Listings',
+      'ta': 'பட்டியல்கள்',
+    },
+    'pqdhjpiy': {
+      'en': 'Home',
+      'ta': 'வீடு',
+    },
+  },
+  // TribalOrderAcceptanceMessage
+  {
+    'mmsij3bd': {
+      'en': 'Success!',
+      'ta': 'வெற்றி!',
+    },
+    '2fgx1mw4': {
+      'en': 'You have accepted the Order',
+      'ta': 'நீங்கள் ஆணையை ஏற்றுக்கொண்டீர்கள்',
+    },
+    'w966eaw4': {
+      'en': 'Next',
+      'ta': 'அடுத்தது',
+    },
+    'csz9ps2i': {
+      'en': 'Home',
+      'ta': 'வீடு',
+    },
+  },
+  // MerchantMyOrderView
+  {
+    '9an2j5ju': {
+      'en': 'Potatoes',
+      'ta': '',
+    },
+    'bmswuizz': {
+      'en': 'Rs. 4000',
+      'ta': '',
+    },
+    'kh11k4o7': {
+      'en': '40 Kgs',
+      'ta': '40 கிலோ',
+    },
+    'talplx5h': {
+      'en': '2 hours ago',
+      'ta': '2 மணி நேரத்திற்கு முன்பு',
+    },
+    '8qib0qyz': {
+      'en': 'Potatoes',
+      'ta': '',
+    },
+    'ksj0ajrp': {
+      'en': 'Rs. 3509',
+      'ta': '',
+    },
+    'zpu0lt3u': {
+      'en': '30 Kgs',
+      'ta': '40 கிலோ',
+    },
+    'odwzvcgq': {
+      'en': '2 hours ago',
+      'ta': '2 மணி நேரத்திற்கு முன்பு',
+    },
+    '6tnrkdoe': {
+      'en': 'Onion',
+      'ta': '',
+    },
+    'et5no6ug': {
+      'en': 'Rs. 9000',
+      'ta': '',
+    },
+    'qh1ty95i': {
+      'en': '40 Kgs',
+      'ta': '40 கிலோ',
+    },
+    'nekwh0o4': {
+      'en': '2 hours ago',
+      'ta': '2 மணி நேரத்திற்கு முன்பு',
+    },
+    'floorfa9': {
+      'en': 'Bananas',
+      'ta': '',
+    },
+    '55yztehh': {
+      'en': 'Rs. 4000',
+      'ta': '',
+    },
+    'nuy0dxp1': {
+      'en': '37 Kgs',
+      'ta': '40 கிலோ',
+    },
+    'd4agblv7': {
+      'en': '2 hours ago',
+      'ta': '2 மணி நேரத்திற்கு முன்பு',
+    },
+    'waw9w5vd': {
+      'en': 'Apples',
+      'ta': '',
+    },
+    'oja9fo4i': {
+      'en': 'Rs. 10000',
+      'ta': '',
+    },
+    'kr2bpsum': {
+      'en': '90 Kgs',
+      'ta': '40 கிலோ',
+    },
+    'lljz6um3': {
+      'en': '2 hours ago',
+      'ta': '2 மணி நேரத்திற்கு முன்பு',
+    },
+    '4cpfpu8j': {
+      'en': 'Your Orders',
+      'ta': 'பட்டியல்கள்',
+    },
+    'vs9gr1i2': {
+      'en': 'Home',
+      'ta': 'வீடு',
     },
   },
   // Miscellaneous
   {
+    'ng597stj': {
+      'en': '',
+      'ta': '',
+    },
     'f22njexg': {
       'en': '',
       'ta': '',

@@ -140,7 +140,7 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                           alignment: AlignmentDirectional(0.00, 0.00),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '9taxauo0' /* Tribals */,
+                              '9taxauo0' /* RootsRetail */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
@@ -217,7 +217,7 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                             borderSide: BorderSide(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .secondary,
                                               width: 2.0,
                                             ),
                                             borderRadius:
@@ -292,7 +292,7 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                             borderSide: BorderSide(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .secondary,
                                               width: 2.0,
                                             ),
                                             borderRadius:
@@ -358,7 +358,7 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                         decoration: InputDecoration(
                                           labelText: FFLocalizations.of(context)
                                               .getText(
-                                            'd7j3oqfz' /* Your Start Produce */,
+                                            'd7j3oqfz' /* Your Star Produce */,
                                           ),
                                           labelStyle:
                                               FlutterFlowTheme.of(context)
@@ -367,7 +367,7 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                             borderSide: BorderSide(
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .primaryBackground,
+                                                      .secondary,
                                               width: 2.0,
                                             ),
                                             borderRadius:
@@ -431,18 +431,35 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                       fillColor: FlutterFlowTheme.of(context)
                                           .secondary,
                                       icon: Icon(
-                                        Icons.fingerprint,
+                                        Icons.fingerprint_rounded,
                                         color: Colors.white,
                                         size: 24.0,
                                       ),
-                                      onPressed: () {
-                                        print('IconButton pressed ...');
+                                      onPressed: () async {
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(
+                                          SnackBar(
+                                            content: Text(
+                                              'Register FingerPrint',
+                                              style: TextStyle(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                              ),
+                                            ),
+                                            duration:
+                                                Duration(milliseconds: 4000),
+                                            backgroundColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .secondary,
+                                          ),
+                                        );
                                       },
                                     ),
                                   ),
                                   Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 16.0),
+                                        0.0, 10.0, 0.0, 16.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
                                         GoRouter.of(context).prepareAuthEvent();
@@ -452,8 +469,17 @@ class _TribalsSignUpWidgetState extends State<TribalsSignUpWidget>
                                           return;
                                         }
 
-                                        context.goNamedAuth('MerchantDashboard',
-                                            context.mounted);
+                                        context.pushNamedAuth(
+                                          'LoginPage',
+                                          context.mounted,
+                                          extra: <String, dynamic>{
+                                            kTransitionInfoKey: TransitionInfo(
+                                              hasTransition: true,
+                                              transitionType: PageTransitionType
+                                                  .rightToLeft,
+                                            ),
+                                          },
+                                        );
                                       },
                                       text: FFLocalizations.of(context).getText(
                                         '65dccg2z' /* Create Account */,

@@ -60,7 +60,7 @@ class _TribalNewsSectionWidgetState extends State<TribalNewsSectionWidget> {
             alignment: AlignmentDirectional(0.00, 0.00),
             child: Text(
               FFLocalizations.of(context).getText(
-                'o52v793z' /* Market News */,
+                'gqi4qe2i' /* Market News */,
               ),
               style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Outfit',

@@ -614,9 +614,8 @@ class _MerchantAccountCreationWidgetState
                                                   TransitionInfo(
                                                 hasTransition: true,
                                                 transitionType:
-                                                    PageTransitionType.fade,
-                                                duration:
-                                                    Duration(milliseconds: 0),
+                                                    PageTransitionType
+                                                        .rightToLeft,
                                               ),
                                             },
                                           );

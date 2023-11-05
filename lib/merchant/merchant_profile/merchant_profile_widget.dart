@@ -103,7 +103,7 @@ class _MerchantProfileWidgetState extends State<MerchantProfileWidget>
                       image: DecorationImage(
                         fit: BoxFit.cover,
                         image: CachedNetworkImageProvider(
-                          'https://images.unsplash.com/photo-1434394354979-a235cd36269d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdW50YWluc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
+                          'https://upload.wikimedia.org/wikipedia/commons/3/32/Chennai_Central.jpg',
                         ),
                       ),
                     ),
@@ -133,7 +133,7 @@ class _MerchantProfileWidgetState extends State<MerchantProfileWidget>
                               fadeInDuration: Duration(milliseconds: 500),
                               fadeOutDuration: Duration(milliseconds: 500),
                               imageUrl:
-                                  'https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTZ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
+                                  'https://economictimes.indiatimes.com/thumb/msid-96164077,width-1200,height-900,resizemode-4,imgsize-45082/rajinikanth.jpg?from=mdr',
                               width: 100.0,
                               height: 100.0,
                               fit: BoxFit.cover,
@@ -155,8 +155,22 @@ class _MerchantProfileWidgetState extends State<MerchantProfileWidget>
                 style: FlutterFlowTheme.of(context).headlineLarge,
               ),
             ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 0.0, 0.0),
+                  child: Text(
+                    FFLocalizations.of(context).getText(
+                      '2j85n8nr' /* Chennai,India */,
+                    ),
+                    style: FlutterFlowTheme.of(context).labelMedium,
+                  ),
+                ),
+              ],
+            ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 0.0, 0.0),
+              padding: EdgeInsetsDirectional.fromSTEB(24.0, 20.0, 0.0, 0.0),
               child: Text(
                 FFLocalizations.of(context).getText(
                   'j47t60t7' /* Your Account */,
@@ -180,6 +194,9 @@ class _MerchantProfileWidgetState extends State<MerchantProfileWidget>
                   ],
                   borderRadius: BorderRadius.circular(8.0),
                   shape: BoxShape.rectangle,
+                  border: Border.all(
+                    color: FlutterFlowTheme.of(context).secondary,
+                  ),
                 ),
                 child: Padding(
                   padding:
@@ -249,6 +266,9 @@ class _MerchantProfileWidgetState extends State<MerchantProfileWidget>
                     ],
                     borderRadius: BorderRadius.circular(8.0),
                     shape: BoxShape.rectangle,
+                    border: Border.all(
+                      color: FlutterFlowTheme.of(context).secondary,
+                    ),
                   ),
                   child: Padding(
                     padding:
@@ -312,6 +332,9 @@ class _MerchantProfileWidgetState extends State<MerchantProfileWidget>
                   ],
                   borderRadius: BorderRadius.circular(8.0),
                   shape: BoxShape.rectangle,
+                  border: Border.all(
+                    color: FlutterFlowTheme.of(context).secondary,
+                  ),
                 ),
                 child: Padding(
                   padding:
@@ -365,6 +388,9 @@ class _MerchantProfileWidgetState extends State<MerchantProfileWidget>
                   ],
                   borderRadius: BorderRadius.circular(8.0),
                   shape: BoxShape.rectangle,
+                  border: Border.all(
+                    color: FlutterFlowTheme.of(context).secondary,
+                  ),
                 ),
                 child: Padding(
                   padding:
@@ -405,7 +431,7 @@ class _MerchantProfileWidgetState extends State<MerchantProfileWidget>
             Align(
               alignment: AlignmentDirectional(0.00, 0.00),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     GoRouter.of(context).prepareAuthEvent();
@@ -427,7 +453,7 @@ class _MerchantProfileWidgetState extends State<MerchantProfileWidget>
                     textStyle: FlutterFlowTheme.of(context).bodyMedium,
                     elevation: 0.0,
                     borderSide: BorderSide(
-                      color: FlutterFlowTheme.of(context).lineColor,
+                      color: FlutterFlowTheme.of(context).secondary,
                       width: 2.0,
                     ),
                     borderRadius: BorderRadius.circular(38.0),

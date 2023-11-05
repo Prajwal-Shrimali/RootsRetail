@@ -6,26 +6,27 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'merchant_helper_bot_model.dart';
-export 'merchant_helper_bot_model.dart';
+import 'tribals_live_price_view_model.dart';
+export 'tribals_live_price_view_model.dart';
 
-class MerchantHelperBotWidget extends StatefulWidget {
-  const MerchantHelperBotWidget({Key? key}) : super(key: key);
+class TribalsLivePriceViewWidget extends StatefulWidget {
+  const TribalsLivePriceViewWidget({Key? key}) : super(key: key);
 
   @override
-  _MerchantHelperBotWidgetState createState() =>
-      _MerchantHelperBotWidgetState();
+  _TribalsLivePriceViewWidgetState createState() =>
+      _TribalsLivePriceViewWidgetState();
 }
 
-class _MerchantHelperBotWidgetState extends State<MerchantHelperBotWidget> {
-  late MerchantHelperBotModel _model;
+class _TribalsLivePriceViewWidgetState
+    extends State<TribalsLivePriceViewWidget> {
+  late TribalsLivePriceViewModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => MerchantHelperBotModel());
+    _model = createModel(context, () => TribalsLivePriceViewModel());
   }
 
   @override
@@ -60,7 +61,7 @@ class _MerchantHelperBotWidgetState extends State<MerchantHelperBotWidget> {
             alignment: AlignmentDirectional(0.00, 0.00),
             child: Text(
               FFLocalizations.of(context).getText(
-                '0e2ocsnv' /* Merchant Help Bot */,
+                'qm00ikj9' /* Live Price Check */,
               ),
               style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Outfit',
@@ -79,9 +80,9 @@ class _MerchantHelperBotWidgetState extends State<MerchantHelperBotWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               FlutterFlowWebView(
-                content: 'https://poe.com/Merchant_Helper_Bot',
+                content: 'https://enam.gov.in/web/dashboard/live_price',
                 bypass: false,
-                height: 755.0,
+                height: 771.0,
                 verticalScroll: false,
                 horizontalScroll: false,
               ),

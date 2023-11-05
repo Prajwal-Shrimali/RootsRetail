@@ -105,6 +105,32 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
         ),
       ],
     ),
+    'containerOnPageLoadAnimation7': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 300.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+        MoveEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 300.ms,
+          begin: Offset(0.0, 20.0),
+          end: Offset(0.0, 0.0),
+        ),
+        TiltEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 300.ms,
+          begin: Offset(0.698, 0),
+          end: Offset(0, 0),
+        ),
+      ],
+    ),
   };
 
   @override
@@ -376,7 +402,7 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                                             child: Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'lr7m46xl' /* Rejected */,
+                                                'lr7m46xl' /* Pending */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -615,6 +641,79 @@ class _MerchantDashboardWidgetState extends State<MerchantDashboardWidget>
                     ),
                   ).animateOnPageLoad(
                       animationsMap['containerOnPageLoadAnimation6']!),
+                ),
+                Padding(
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 3.0,
+                          color: Color(0x33000000),
+                          offset: Offset(0.0, 1.0),
+                        )
+                      ],
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    child: Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 12.0, 0.0),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 12.0, 12.0, 0.0),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        FFLocalizations.of(context).getText(
+                                          '3g92iyv0' /* My Orders */,
+                                        ),
+                                        style: FlutterFlowTheme.of(context)
+                                            .headlineSmall,
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 4.0, 0.0, 6.0),
+                                        child: Text(
+                                          FFLocalizations.of(context).getText(
+                                            'w332544j' /* Generate your Orders */,
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .labelMedium,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Icon(
+                                  Icons.keyboard_arrow_right_rounded,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryText,
+                                  size: 24.0,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ).animateOnPageLoad(
+                      animationsMap['containerOnPageLoadAnimation7']!),
                 ),
               ],
             ),

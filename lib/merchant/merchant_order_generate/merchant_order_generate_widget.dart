@@ -71,7 +71,7 @@ class _MerchantOrderGenerateWidgetState
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 250.0, 0.0, 30.0),
+                      EdgeInsetsDirectional.fromSTEB(0.0, 250.0, 0.0, 50.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'cylcdrj3' /* Order Generating Screen */,
@@ -234,8 +234,16 @@ class _MerchantOrderGenerateWidgetState
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed(
+                        'MerchantSuccessPage',
+                        extra: <String, dynamic>{
+                          kTransitionInfoKey: TransitionInfo(
+                            hasTransition: true,
+                            transitionType: PageTransitionType.rightToLeft,
+                          ),
+                        },
+                      );
                     },
                     text: FFLocalizations.of(context).getText(
                       'c2y5vg40' /* Generate Order */,

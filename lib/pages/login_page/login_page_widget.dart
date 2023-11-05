@@ -10,6 +10,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:local_auth/local_auth.dart';
 import 'package:provider/provider.dart';
 import 'login_page_model.dart';
 export 'login_page_model.dart';
@@ -158,7 +159,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 72.0),
                     child: Text(
                       FFLocalizations.of(context).getText(
-                        '1gau6rn2' /* Tribals */,
+                        '1gau6rn2' /* RootRetails */,
                       ),
                       style: FlutterFlowTheme.of(context).displaySmall,
                     ),
@@ -235,7 +236,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                         Tab(
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'kgy2nycs' /* Tribal */,
+                                            'kgy2nycs' /* Consumer */,
                                           ),
                                         ),
                                       ],
@@ -808,50 +809,73 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                     'columnOnPageLoadAnimation1']!),
                                               ),
                                             ),
-                                            RichText(
-                                              textScaleFactor:
-                                                  MediaQuery.of(context)
-                                                      .textScaleFactor,
-                                              text: TextSpan(
-                                                children: [
-                                                  TextSpan(
-                                                    text: FFLocalizations.of(
-                                                            context)
-                                                        .getText(
-                                                      '2qyol94u' /* Dont have a account. */,
+                                            InkWell(
+                                              splashColor: Colors.transparent,
+                                              focusColor: Colors.transparent,
+                                              hoverColor: Colors.transparent,
+                                              highlightColor:
+                                                  Colors.transparent,
+                                              onTap: () async {
+                                                context.pushNamed(
+                                                  'MerchantAccountCreation',
+                                                  extra: <String, dynamic>{
+                                                    kTransitionInfoKey:
+                                                        TransitionInfo(
+                                                      hasTransition: true,
+                                                      transitionType:
+                                                          PageTransitionType
+                                                              .rightToLeft,
                                                     ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Readex Pro',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .primaryText,
-                                                          fontWeight:
-                                                              FontWeight.normal,
-                                                        ),
-                                                  ),
-                                                  TextSpan(
-                                                    text: FFLocalizations.of(
-                                                            context)
-                                                        .getText(
-                                                      'dvt8z5sp' /*  Sign Up */,
-                                                    ),
-                                                    style: TextStyle(
-                                                      color:
+                                                  },
+                                                );
+                                              },
+                                              child: RichText(
+                                                textScaleFactor:
+                                                    MediaQuery.of(context)
+                                                        .textScaleFactor,
+                                                text: TextSpan(
+                                                  children: [
+                                                    TextSpan(
+                                                      text: FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        '2qyol94u' /* Dont have a account. */,
+                                                      ),
+                                                      style:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .primary,
-                                                      fontWeight:
-                                                          FontWeight.w600,
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryText,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
                                                     ),
-                                                  )
-                                                ],
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium,
+                                                    TextSpan(
+                                                      text: FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                        'dvt8z5sp' /*  Sign Up */,
+                                                      ),
+                                                      style: TextStyle(
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                      ),
+                                                    )
+                                                  ],
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium,
+                                                ),
                                               ),
                                             ),
                                           ],
@@ -892,14 +916,14 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
+                                                                  20.0,
                                                                   0.0,
-                                                                  0.0,
-                                                                  100.0),
+                                                                  50.0),
                                                       child: Text(
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'c8qp0mlb' /* Welcome Back */,
+                                                          'c8qp0mlb' /* Welcome Chief! */,
                                                         ),
                                                         textAlign:
                                                             TextAlign.start,
@@ -919,24 +943,128 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
+                                                                  160.0,
                                                                   0.0,
-                                                                  0.0,
-                                                                  39.0),
+                                                                  20.0),
                                                       child: FFButtonWidget(
                                                         onPressed: () async {
+                                                          var _shouldSetState =
+                                                              false;
+                                                          final _localAuth =
+                                                              LocalAuthentication();
+                                                          bool
+                                                              _isBiometricSupported =
+                                                              await _localAuth
+                                                                  .isDeviceSupported();
+                                                          bool
+                                                              canCheckBiometrics =
+                                                              await _localAuth
+                                                                  .canCheckBiometrics;
+                                                          if (_isBiometricSupported &&
+                                                              canCheckBiometrics) {
+                                                            _model.isbiometric = await _localAuth
+                                                                .authenticate(
+                                                                    localizedReason:
+                                                                        FFLocalizations.of(context)
+                                                                            .getText(
+                                                                      'jg2qp1o1' /* Kindly place your finger here. */,
+                                                                    ),
+                                                                    options: const AuthenticationOptions(
+                                                                        biometricOnly:
+                                                                            true));
+                                                            setState(() {});
+                                                          }
+
+                                                          _shouldSetState =
+                                                              true;
+                                                          if (_model
+                                                              .isbiometric!) {
+                                                            ScaffoldMessenger
+                                                                    .of(context)
+                                                                .showSnackBar(
+                                                              SnackBar(
+                                                                content: Text(
+                                                                  'Success!',
+                                                                  style:
+                                                                      TextStyle(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                  ),
+                                                                ),
+                                                                duration: Duration(
+                                                                    milliseconds:
+                                                                        4000),
+                                                                backgroundColor:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondary,
+                                                              ),
+                                                            );
+                                                          } else {
+                                                            ScaffoldMessenger
+                                                                    .of(context)
+                                                                .showSnackBar(
+                                                              SnackBar(
+                                                                content: Text(
+                                                                  'Failure',
+                                                                  style:
+                                                                      TextStyle(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryText,
+                                                                  ),
+                                                                ),
+                                                                duration: Duration(
+                                                                    milliseconds:
+                                                                        4000),
+                                                                backgroundColor:
+                                                                    FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondary,
+                                                              ),
+                                                            );
+                                                            if (_shouldSetState)
+                                                              setState(() {});
+                                                            return;
+                                                          }
+
                                                           context.pushNamed(
-                                                              'TribalsDashboard');
+                                                            'TribalsDashboard',
+                                                            extra: <String,
+                                                                dynamic>{
+                                                              kTransitionInfoKey:
+                                                                  TransitionInfo(
+                                                                hasTransition:
+                                                                    true,
+                                                                transitionType:
+                                                                    PageTransitionType
+                                                                        .rightToLeft,
+                                                              ),
+                                                            },
+                                                          );
+
+                                                          if (_shouldSetState)
+                                                            setState(() {});
                                                         },
                                                         text:
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                          '6p2s5kx8' /* Sign In */,
+                                                          '6p2s5kx8' /*  */,
+                                                        ),
+                                                        icon: Icon(
+                                                          Icons
+                                                              .fingerprint_rounded,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryBtnText,
+                                                          size: 30.0,
                                                         ),
                                                         options:
                                                             FFButtonOptions(
-                                                          width: 230.0,
-                                                          height: 52.0,
+                                                          width: 70.0,
+                                                          height: 70.0,
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(
@@ -947,7 +1075,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                           iconPadding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(
-                                                                      0.0,
+                                                                      8.0,
                                                                       0.0,
                                                                       0.0,
                                                                       0.0),
@@ -974,61 +1102,116 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(
-                                                                      40.0),
+                                                                      50.0),
                                                         ),
                                                       ),
                                                     ),
+                                                  ),
+                                                  Stack(
+                                                    children: [
+                                                      Align(
+                                                        alignment:
+                                                            AlignmentDirectional(
+                                                                0.00, 0.00),
+                                                        child: Text(
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                            'sifvr60l' /* Press Here! */,
+                                                          ),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium,
+                                                        ),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
                                                             0.00, 0.00),
-                                                    child: RichText(
-                                                      textScaleFactor:
-                                                          MediaQuery.of(context)
-                                                              .textScaleFactor,
-                                                      text: TextSpan(
-                                                        children: [
-                                                          TextSpan(
-                                                            text: FFLocalizations
-                                                                    .of(context)
-                                                                .getText(
-                                                              'yquvr059' /* Dont have a account. */,
-                                                            ),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Readex Pro',
+                                                    child: Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  20.0,
+                                                                  0.0,
+                                                                  0.0),
+                                                      child: InkWell(
+                                                        splashColor:
+                                                            Colors.transparent,
+                                                        focusColor:
+                                                            Colors.transparent,
+                                                        hoverColor:
+                                                            Colors.transparent,
+                                                        highlightColor:
+                                                            Colors.transparent,
+                                                        onTap: () async {
+                                                          context.pushNamed(
+                                                            'TribalsSignUp',
+                                                            extra: <String,
+                                                                dynamic>{
+                                                              kTransitionInfoKey:
+                                                                  TransitionInfo(
+                                                                hasTransition:
+                                                                    true,
+                                                                transitionType:
+                                                                    PageTransitionType
+                                                                        .rightToLeft,
+                                                              ),
+                                                            },
+                                                          );
+                                                        },
+                                                        child: RichText(
+                                                          textScaleFactor:
+                                                              MediaQuery.of(
+                                                                      context)
+                                                                  .textScaleFactor,
+                                                          text: TextSpan(
+                                                            children: [
+                                                              TextSpan(
+                                                                text: FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'yquvr059' /* Dont have a account. */,
+                                                                ),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Readex Pro',
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .primaryText,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .normal,
+                                                                    ),
+                                                              ),
+                                                              TextSpan(
+                                                                text: FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'mhbd3t4o' /*  Sign Up */,
+                                                                ),
+                                                                style:
+                                                                    TextStyle(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .primaryText,
+                                                                      .primary,
                                                                   fontWeight:
                                                                       FontWeight
-                                                                          .normal,
+                                                                          .w600,
                                                                 ),
-                                                          ),
-                                                          TextSpan(
-                                                            text: FFLocalizations
+                                                              )
+                                                            ],
+                                                            style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .getText(
-                                                              'mhbd3t4o' /*  Sign Up */,
-                                                            ),
-                                                            style: TextStyle(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primary,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w600,
-                                                            ),
-                                                          )
-                                                        ],
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
                                                                 .bodyMedium,
+                                                          ),
+                                                        ),
                                                       ),
                                                     ),
                                                   ),

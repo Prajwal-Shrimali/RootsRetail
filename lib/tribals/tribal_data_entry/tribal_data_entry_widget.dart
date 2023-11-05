@@ -26,8 +26,11 @@ class _TribalDataEntryWidgetState extends State<TribalDataEntryWidget> {
     super.initState();
     _model = createModel(context, () => TribalDataEntryModel());
 
-    _model.textController ??= TextEditingController();
-    _model.textFieldFocusNode ??= FocusNode();
+    _model.textController1 ??= TextEditingController();
+    _model.textFieldFocusNode1 ??= FocusNode();
+
+    _model.textController2 ??= TextEditingController();
+    _model.textFieldFocusNode2 ??= FocusNode();
   }
 
   @override
@@ -67,7 +70,7 @@ class _TribalDataEntryWidgetState extends State<TribalDataEntryWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'qp382i31' /* Data Input Page */,
+                      'qp382i31' /* Inventory Update Page */,
                     ),
                     style: FlutterFlowTheme.of(context).headlineMedium.override(
                           fontFamily: 'Outfit',
@@ -79,10 +82,10 @@ class _TribalDataEntryWidgetState extends State<TribalDataEntryWidget> {
                   padding:
                       EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 10.0),
                   child: TextFormField(
-                    controller: _model.textController,
-                    focusNode: _model.textFieldFocusNode,
+                    controller: _model.textController1,
+                    focusNode: _model.textFieldFocusNode1,
                     onChanged: (_) => EasyDebounce.debounce(
-                      '_model.textController',
+                      '_model.textController1',
                       Duration(milliseconds: 2000),
                       () => setState(() {}),
                     ),
@@ -97,7 +100,7 @@ class _TribalDataEntryWidgetState extends State<TribalDataEntryWidget> {
                       hintStyle: FlutterFlowTheme.of(context).bodyLarge,
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
-                          color: FlutterFlowTheme.of(context).primaryText,
+                          color: FlutterFlowTheme.of(context).secondary,
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
@@ -123,10 +126,10 @@ class _TribalDataEntryWidgetState extends State<TribalDataEntryWidget> {
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
-                      suffixIcon: _model.textController!.text.isNotEmpty
+                      suffixIcon: _model.textController1!.text.isNotEmpty
                           ? InkWell(
                               onTap: () async {
-                                _model.textController?.clear();
+                                _model.textController1?.clear();
                                 setState(() {});
                               },
                               child: Icon(
@@ -140,40 +143,75 @@ class _TribalDataEntryWidgetState extends State<TribalDataEntryWidget> {
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium,
                     validator:
-                        _model.textControllerValidator.asValidator(context),
+                        _model.textController1Validator.asValidator(context),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                  child: Container(
-                    width: double.infinity,
-                    height: 60.0,
-                    decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
-                      borderRadius: BorderRadius.circular(8.0),
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
+                  child: TextFormField(
+                    controller: _model.textController2,
+                    focusNode: _model.textFieldFocusNode2,
+                    onChanged: (_) => EasyDebounce.debounce(
+                      '_model.textController2',
+                      Duration(milliseconds: 2000),
+                      () => setState(() {}),
                     ),
-                    child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 8.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            FFLocalizations.of(context).getText(
-                              'zyn8canv' /* Produce */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                ),
-                          ),
-                        ],
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      labelText: FFLocalizations.of(context).getText(
+                        '59rlt8h7' /* Produce */,
                       ),
+                      hintText: FFLocalizations.of(context).getText(
+                        'edbe3d38' /* Enter the name of the produce.... */,
+                      ),
+                      hintStyle: FlutterFlowTheme.of(context).bodyLarge,
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: FlutterFlowTheme.of(context).secondary,
+                          width: 2.0,
+                        ),
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0x00000000),
+                          width: 2.0,
+                        ),
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                      errorBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0x00000000),
+                          width: 2.0,
+                        ),
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                      focusedErrorBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0x00000000),
+                          width: 2.0,
+                        ),
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                      suffixIcon: _model.textController2!.text.isNotEmpty
+                          ? InkWell(
+                              onTap: () async {
+                                _model.textController2?.clear();
+                                setState(() {});
+                              },
+                              child: Icon(
+                                Icons.clear,
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                size: 22.0,
+                              ),
+                            )
+                          : null,
                     ),
+                    style: FlutterFlowTheme.of(context).bodyMedium,
+                    validator:
+                        _model.textController2Validator.asValidator(context),
                   ),
                 ),
                 Padding(
